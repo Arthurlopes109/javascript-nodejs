@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM com Mais interação</title>
+    <style>
+        body{
+            font: 20pt arial;
+        }
+
+        input{
+            font: 20pt arial;
+            width: 150px;
+        }
+
+        div{
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Somando valores</h1>
     <input type="number" name="t1" id="t1"> +
     <input type="number" name="t2" id="t2">
     <input type="button" value="Somar" onclick="somar()">
-
+    <div id="res"> <strong>Resultado</strong></div>
     <script>
         function somar(){
-            var tn1 =
+            var tn1 = document.getElementById('t1')
+            var tn2 = document.querySelector('input#t2')
+            var res = document.querySelector('div#res')
+            var n1 = Number(t1.value)
+            var n2 = Number(t2.value)
+            var soma = n1 + n2 
+            res.innerHTML =`<strong>O resultado da soma entre ${n1} + ${n2} é = ${soma}</strong>`
         }
     </script>
 </body>
