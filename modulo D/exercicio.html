@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>De qual país você é ?</h1>
+     Esqueva aqui <input type="text" name="pais" id="pais">
+                  <input type="button" value="clique" onclick="clique()">
+                  <div id="resp">
+
+                  </div>
+                  <script>
+                    function clique() {
+                        var p = document.querySelector('input#pais')
+                        var resp = document.querySelector('div#resp')
+                        var pais = p.value
+                        resp.innerHTML = `Seu pais Atual é ${pais}`
+                        if (pais.toLowerCase() != 'brasil') {
+                             resp.innerHTML += ` Você é estrangeiro`
+                        }
+                        elseif ('pais == brasil') 
+                            resp.innerHTML += `Você é Brasileiro`
+                      
+                    }
+                  </script>
+
+</body>
+</html>
