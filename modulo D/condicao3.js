@@ -1,6 +1,6 @@
 var idade = 10
 console.log(`Você tem ${idade} anos`)
-if (idade < 16 ) {
+if (idade < 16 ) { // Condição aninhada
     console.log('Não vota')
 } else if (idade < 18) {
     console.log('Voto opcional')                       
