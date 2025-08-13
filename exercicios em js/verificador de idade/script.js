@@ -12,44 +12,47 @@ function start(){
      var input_sexo = document.getElementsByName('sexo')
      var idade = ano_atual - Number(ano.value)
      var gênero = ''
-     var img = document.createElement('img')
-     img.setAttribute('id', 'foto')
+     var img = document.getElementById('foto')
      if(input_sexo[0].checked) {
         gênero = 'Homem'
         if(idade >=0 && idade < 10){
             //criança
-            img.setAttribute('src', 'imagens/menino.png')
+            img.src = 'imagens/menino.png'
         }
         else if (idade < 25){
             //jovem
-            img.setAttribute('src', 'imagens/novinho.png')
+            img.src = 'imagens/novinho.png'
         } 
         else if(idade < 50){
             //Homem adulto
-            img.setAttribute('src', 'imagens/homem.png')
+            img.src = 'imagens/homem.png'
         }
         else {
             // velho
-            img.setAttribute('src', 'imagens/velho.png')
+           img.src = 'imagens/velho.png'
         }
      }  
     else if(input_sexo[1].checked){
         gênero = 'Mulher'
         if(idade >=0 && idade < 18){
-            //criança
+            img.src = 'imagens/menina.png'
         }
         else if (idade < 25){
             //jovem
+            img.src = 'imagens/novinha.png'
         } 
         else if(idade < 50){
             //Mulher adulta
+            img.src = 'imagens/mulher.png'
         }
         else{
             // velha
+            img.src = 'imagens/velha.png'
         }
     }
+    
     resposta.style.textAlign ='center'
-    resposta.innerHTML = `${gênero} com ${idade} anos`
+    resposta.innerHTML = `${gênero} com ${idade} anos<br>`
     resposta.appendChild(img)
    }
 }
