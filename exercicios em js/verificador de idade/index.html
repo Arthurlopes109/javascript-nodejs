@@ -7,25 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Verificador de idade</h1>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
     <main>
-        <div>
-            <label for="ano">Ano de nascimento</label>
-            <input type="number" name="ano" id="ano" required>
-        </div>
-        <div>
-            Sexo  <input type="radio" name="sex" id="masculino" value="M">
-                  <label for="masculino">Masculino</label>
+        <section>
+         <div>
+            <p>
+                Ano de nascimento:
+                <input type="number" name="ano" id="ano" required>
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="sexo" id="masculino" checked>
+                <label for="masculino">Masculino</label>
 
-                  <input type="radio" name="sex" id="feminino">
-                  <label for="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>     
+            <p>
+                <input type="submit" value="Verificar" onclick="start()">
+            </p>
         </div>
-        <div>
-            <input type="submit" value="Verificar">
-        </div>
-        <div>
+        <div id="resultado">
             <P>Preencha os dados acima para ver o resultado!</P>
         </div>
+        </section>
+        
     </main>
     <footer>#mibombo</footer>
     <script src="script.js"></script>
