@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(84, 164, 218);
+}
+
+header > h1{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+
+section{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+footer{
+    color: white;
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
