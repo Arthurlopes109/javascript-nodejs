@@ -1,18 +1,12 @@
-function start(){
-    var inicio = Number(document.getElementsByName('n1')[0].value)
-    var fim = Number(document.getElementsByName('n2')[0].value)
-    var salto = Number(document.getElementsByName('pulo')[0].value)
-    var resp = document.getElementById('resultado')
+function contar() {
+    const inicio = document.getElementById('inicio')
+    const fim = document.getElementById('fim')
+    const salto = document.getElementById('salto')
+    const res = document.getElementById('resp')
 
-    resp.innerHTML ='Contando: <br>'
-
-    if(salto <= 0) {
-        alert('O salto tem que ser maior que 0')
+    if (inicio.value.length == 0 || fim.value.length == 0 || salto.value.length == 0){
+        alert('[erro]')
+    } else {
+        alert('ok')
     }
-
-    for(var c = inicio; c <= fim; c += salto) {
-        resp.innerHTML += `${c} 👉`
-    }
-
-    resp.innerHTML += `🏁`
 }

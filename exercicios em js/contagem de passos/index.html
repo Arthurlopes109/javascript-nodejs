@@ -11,29 +11,15 @@
         <h1>Vamos contar</h1>
     </header>
         <section>
-            <div id="teste">inicio x passo vem primeiro/ depois vem o fim para servir como o limite de até onde é para contar/ ex: inicio = 2; fim = 10; passo = 2 = 2 - 4 - 6 - 8 - 10fim
-                <p>
-                    Inicio <input type="number" name="n1" id="n1" required>
-                </p>
-                 <p>
-                    Fim <input type="number" name="n2" id="n2" required>
-                </p>
-                <p>
-                  Salto <input type="number" name="pulo" id="pulo" required>
-                </p>
-                <p>
-                    <input type="submit" value="Contar" onclick="start()">
-                    <input type="reset" value="Limpar">
-                </p>
+            <div id="começo">
+                <p>Inicio: <input type="number" name="inicio" id="inicio"></p>
+                <p>Fim: <input type="number" name="fim" id="fim"></p>
+                <p>Salto: <input type="number" name="salto" id="salto"></p>
+                <p><input type="button" value="Contar" onclick="contar()"></p>
             </div>
-            <div id="resultado">
-
-
+            <div id="resp">
+                Preparando a contagem...
             </div>
         </section>
-    <footer>
-        <p>#mibombo</p>
-    </footer>
-    <script src="script.js"></script>
 </body>
 </html>
