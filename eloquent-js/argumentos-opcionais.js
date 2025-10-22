@@ -10,6 +10,6 @@ function power(base, exponent){
 }
 
 console.log(power(4))
-// 16
+// 4 x 4 = 16
 console.log(power(4, 3))
-//64
+//4³ = 4 x 4 x 4 = 64
